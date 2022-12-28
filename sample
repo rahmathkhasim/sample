@@ -1,0 +1,25 @@
+1.array ka max number kaisa karte wo 
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+#define Max 100
+int main() {
+    int n,a[Max],i;
+    printf("enter the no of elements you want to enter:");
+    scanf("%d",&n);
+    for(i=0;i<=n;i++)
+    {   //printf("enter the number for ");
+        scanf("%d",&a[i]);
+    }
+    // for max element
+    for(i=0,j=i+1;i<=n;i++)
+    { if(a[i]>a[j])
+    {
+      j++;  
+    } 
+      else
+      {
+          i++
+      }
+          
